@@ -5,6 +5,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.orhanobut.logger.Logger;
+
 
 /**
  * Created by 24275 on 2016/5/24.
@@ -24,7 +26,7 @@ public class DebugUtils {
         DebugUtils.type = type;
         DebugUtils.tag = tag;
         if (type == 1) {
-//            Logger.init(tag).methodCount(1).methodOffset(2);
+            Logger.init(tag).methodCount(1).methodOffset(2);
         }
     }
 
@@ -47,8 +49,8 @@ public class DebugUtils {
             Log.d(tag, msg);
         } else {
             int offset = LOG_TAG.equals(tag) ? 3 : 2;
-//            Logger.init(tag).methodCount(1).methodOffset(offset);
-//            Logger.d(msg);
+            Logger.init(tag).methodCount(1).methodOffset(offset);
+            Logger.d(msg);
         }
     }
 
