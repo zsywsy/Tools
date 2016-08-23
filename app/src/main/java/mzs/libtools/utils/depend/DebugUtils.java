@@ -8,9 +8,7 @@ import android.widget.Toast;
 import com.orhanobut.logger.Logger;
 
 
-/**
- * Created by 24275 on 2016/5/24.
- */
+
 public class DebugUtils {
 
     public static final String LOG_TAG = "logDebug";
