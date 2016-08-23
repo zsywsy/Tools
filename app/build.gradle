@@ -24,12 +24,3 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 }
-
-//def vName = '1.0'  //可以自定义的版本号
-//def vCode = 1
-//task makeJar(type: Copy, dependsOn: ['build']) {
-//    from('build/intermediates/bundles/release/')
-//    into('build/libs')
-//    include('classes.jar')
-//    rename('classes.jar', "momo-test${vName}.${vCode}.jar")
-//}
